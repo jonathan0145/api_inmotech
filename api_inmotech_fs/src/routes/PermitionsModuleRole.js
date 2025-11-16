@@ -18,7 +18,7 @@
 // export default router;
 
 const express = require('express');
-const PermitionsModuleRoleController = require('../controllers/PermitionsModuleRoleController');
+const PermitionsModuleRoleController = require('../controllers/permitionsModuleRoleController');
 const router = express.Router();
 
 router.get('/', PermitionsModuleRoleController.findAll);

@@ -19,7 +19,7 @@
 // export default router;
 
 const express = require('express');
-const UsersController = require('../controllers/UsersController');
+const UsersController = require('../controllers/usersController');
 const router = express.Router();
 
 router.get('/', UsersController.findAll);

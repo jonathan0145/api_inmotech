@@ -143,7 +143,7 @@ if (isDevelopment) {
       console.log('✅ ¡Conexión a la base de datos establecida!');
       console.log(`🚀 Servidor ejecutándose en RED LOCAL:`);
       console.log(`   - Local: http://localhost:${PORT}`);
-      console.log(`   - Red: http://192.168.20.21:${PORT}`);
+      console.log(`   - Red: http://${process.env.HOST || '10.1.195.182'}:${PORT}`);
       console.log(`   - Ambiente: ${process.env.NODE_ENV || 'production'}`);
       console.log('📁 Rutas estáticas configuradas para imágenes');
     } catch (error) {

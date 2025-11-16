@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-10-2025 a las 23:51:57
+-- Tiempo de generación: 10-11-2025 a las 20:18:28
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -27,9 +27,6 @@ USE `inmotech_fs_development`;
 
 --
 -- Estructura de tabla para la tabla `acerca_edificacion`
---
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
 --
 
 DROP TABLE IF EXISTS `acerca_edificacion`;
@@ -60,9 +57,9 @@ TRUNCATE TABLE `acerca_edificacion`;
 --
 
 INSERT INTO `acerca_edificacion` (`Acerca_edificacion_id`, `AcercaDeLaEdificacion`, `Estrato`, `Tipo_construccion`, `Anio_construccion`, `Estado_conservacion`, `Zona_comun`, `Descripcion_adicional`, `Created_at`, `Updated_at`) VALUES
-(1, 'Edificio de Apartamentos Residencial', 2, 'Residencial', 2025, 'Excelente', 1, 'Cuenta con piscina, gimnasio y salones sociales.', '2025-09-02 16:18:25', '2025-09-02 16:18:25'),
+(1, 'Edificio de Apartamentos Residencial', 2, 'Residencial', 2025, 'Excelente', 1, 'Cuenta con piscina, gimnasio y salones sociales.', '2025-09-02 16:18:25', '2025-10-03 19:13:09'),
 (5, 'Edificio moderno', 3, 'Concreto', 2020, 'Excelente', 0, 'Edificio nuevo', '2025-10-01 13:18:02', '2025-10-01 13:18:02'),
-(6, 'edificatio', 4, 'dsad', 2024, '4', 1, 'asasfasfdf', '2025-10-01 18:37:17', '2025-10-01 18:37:17'),
+(6, 'edificatio', 4, 'dsad', 2024, '4', 1, 'asasfasfdf', '2025-10-01 18:37:17', '2025-10-03 12:46:17'),
 (7, 'Edificio de Apartamentos Residencial', 2, 'dsad', 2024, '852', 3, '852', '2025-10-01 19:52:57', '2025-10-01 19:52:57'),
 (8, '9999', 9, '999', 999, '9', 9, '9', '2025-10-02 20:06:20', '2025-10-02 20:06:20'),
 (9, '888', 8, '888', 888, '888', 8, '888', '2025-10-02 20:42:59', '2025-10-02 20:42:59');
@@ -71,9 +68,6 @@ INSERT INTO `acerca_edificacion` (`Acerca_edificacion_id`, `AcercaDeLaEdificacio
 
 --
 -- Estructura de tabla para la tabla `asignacion`
---
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
 --
 
 DROP TABLE IF EXISTS `asignacion`;
@@ -103,9 +97,9 @@ TRUNCATE TABLE `asignacion`;
 --
 
 INSERT INTO `asignacion` (`Asignacion_id`, `Parqueaderos_asignados`, `Organizacion_parqueadero_FK`, `Disponible`, `Descripcion`, `Created_at`, `Updated_at`) VALUES
-(1, '[\"A101\",\"A102\"]', 1, 1, 'Parqueaderos asignados al apto 101 y 102 en la Org. 1', '2025-09-02 16:18:25', '2025-09-02 16:18:25'),
+(1, '[\"A101\",\"A102\"]', 1, 1, 'Parqueaderos asignados al apto 101 y 102 en la Org. 1', '2025-09-02 16:18:25', '2025-10-03 19:13:09'),
 (7, '[\"P-1\"]', 7, 0, 'Un parqueadero', '2025-10-01 13:18:01', '2025-10-01 13:18:01'),
-(8, '\"[\\\"A101\\\", \\\"A102\\\"]\"', 8, 1, 'asxc', '2025-10-01 18:37:18', '2025-10-01 18:37:18'),
+(8, '\"[\\\"A101\\\",\\\"A102\\\"]\"', 8, 1, 'asxc', '2025-10-01 18:37:18', '2025-10-03 12:46:17'),
 (9, '\"[\\\"A101\\\", \\\"A102\\\"]\"', 9, 1, 'asxc', '2025-10-01 19:52:57', '2025-10-01 19:52:57'),
 (10, '\"[\\\"A101\\\", \\\"A102\\\"]\"', 8, 1, 'Parqueaderos asignados al apto 101 y 102 en la Org. 1', '2025-10-02 20:06:20', '2025-10-02 20:06:20'),
 (11, '\"[\\\"A101\\\", \\\"A102\\\"]\"', 10, 1, '888', '2025-10-02 20:42:59', '2025-10-02 20:42:59');
@@ -114,9 +108,6 @@ INSERT INTO `asignacion` (`Asignacion_id`, `Parqueaderos_asignados`, `Organizaci
 
 --
 -- Estructura de tabla para la tabla `barrio`
---
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
 --
 
 DROP TABLE IF EXISTS `barrio`;
@@ -149,9 +140,6 @@ INSERT INTO `barrio` (`Barrio_id`, `Nombre_barrio`, `Created_at`, `Updated_at`) 
 
 --
 -- Estructura de tabla para la tabla `barrio_ciudad_corregimiento_vereda`
---
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
 --
 
 DROP TABLE IF EXISTS `barrio_ciudad_corregimiento_vereda`;
@@ -196,8 +184,6 @@ INSERT INTO `barrio_ciudad_corregimiento_vereda` (`Barrio_ciudad_corregimiento_v
 --
 -- Estructura de tabla para la tabla `carrusel`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `carrusel`;
 CREATE TABLE `carrusel` (
@@ -232,9 +218,6 @@ INSERT INTO `carrusel` (`id`, `titulo`, `descripcion`, `imagen_url`, `orden`, `a
 
 --
 -- Estructura de tabla para la tabla `ciudad`
---
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
 --
 
 DROP TABLE IF EXISTS `ciudad`;
@@ -271,8 +254,6 @@ INSERT INTO `ciudad` (`Ciudad_id`, `Ciudad`, `Municipio_FK`, `Activo`, `Created_
 --
 -- Estructura de tabla para la tabla `contacto`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `contacto`;
 CREATE TABLE `contacto` (
@@ -305,9 +286,6 @@ TRUNCATE TABLE `contacto`;
 
 --
 -- Estructura de tabla para la tabla `corregimiento`
---
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
 --
 
 DROP TABLE IF EXISTS `corregimiento`;
@@ -344,9 +322,6 @@ INSERT INTO `corregimiento` (`Corregimiento_id`, `Corregimiento`, `Municipio_FK`
 --
 -- Estructura de tabla para la tabla `designador_cardinal`
 --
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:06:21
---
 
 DROP TABLE IF EXISTS `designador_cardinal`;
 CREATE TABLE `designador_cardinal` (
@@ -379,9 +354,6 @@ INSERT INTO `designador_cardinal` (`Designador_cardinal_id`, `Cardinalidad`, `Ab
 
 --
 -- Estructura de tabla para la tabla `direccion`
---
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
 --
 
 DROP TABLE IF EXISTS `direccion`;
@@ -421,11 +393,11 @@ TRUNCATE TABLE `direccion`;
 --
 
 INSERT INTO `direccion` (`Direccion_id`, `Direccion`, `Tipo_via`, `Numero_via_principal`, `Numero_calle_transversal`, `Numero_edificacion`, `Descripcion_adicional`, `Designador_cardinal_FK`, `Localizacion_FK`, `Barrio_ciudad_corregimiento_vereda_FK`, `Activo`, `Created_at`, `Updated_at`) VALUES
-(1, 'Calle 123 #45-67', 'Calle', 123, 45, 67, 'Apto 101', 1, 1, NULL, 1, '2025-09-02 16:18:25', '2025-09-02 16:18:25'),
+(1, 'Calle 123 #45-67', 'Calle', 123, 45, 67, 'Apto 101', 1, 1, NULL, 1, '2025-09-02 16:18:25', '2025-10-03 19:13:09'),
 (9, 'Calle 50 # 20-10', 'Calle', 50, 20, 10, 'Edificio principal', NULL, 11, NULL, 1, '2025-10-01 13:18:01', '2025-10-01 13:18:01'),
 (10, '123', '123', 123, 123, 121, '123', NULL, 12, NULL, 1, '2025-10-01 18:20:06', '2025-10-01 18:20:06'),
 (11, '567', '567', 567, 567, 567, '567', NULL, 13, NULL, 1, '2025-10-01 18:28:49', '2025-10-01 18:28:49'),
-(12, '890', '890', 890, 890, 890, '890', 1, 14, NULL, 1, '2025-10-01 18:37:17', '2025-10-01 15:21:21'),
+(12, '890', '890', 890, 890, 890, '890', 1, 14, NULL, 1, '2025-10-01 18:37:17', '2025-10-03 12:46:17'),
 (13, '852', '852', 852, 852, 852, '852', NULL, 15, NULL, 1, '2025-10-01 19:52:57', '2025-10-01 19:52:57'),
 (14, '9999', '9999', 9999, 9999, 9999, '9999', 6, 17, NULL, 1, '2025-10-02 20:06:20', '2025-10-02 20:06:20'),
 (15, '888', '888', 888, 888, 888, '888', 6, 18, 2, 1, '2025-10-02 20:42:59', '2025-10-02 20:42:59');
@@ -434,9 +406,6 @@ INSERT INTO `direccion` (`Direccion_id`, `Direccion`, `Tipo_via`, `Numero_via_pr
 
 --
 -- Estructura de tabla para la tabla `division`
---
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
 --
 
 DROP TABLE IF EXISTS `division`;
@@ -476,9 +445,9 @@ TRUNCATE TABLE `division`;
 --
 
 INSERT INTO `division` (`Division_id`, `Division`, `Balcon`, `Baños`, `Terraza`, `Habitaciones`, `Garaje`, `Ascensores`, `Area`, `Closets`, `Estudio`, `Sala`, `Comedor`, `Cocina`, `Zona_lavanderia`, `Deposito`, `Descripcion_adicional`, `Created_at`, `Updated_at`) VALUES
-(1, 'Apartamento Grande', 'Si', 3, 1, 3, 2, 'Si', '120', 5, 1, 1, 1, 'Integral', 1, 1, 'Amplio apartamento con vista a la ciudad', '2025-09-02 16:18:25', '2025-09-02 16:18:25'),
+(1, 'Apartamento Grande', 'Si', 3, 1, 3, 3, 'Si', '120', 5, 1, 1, 1, 'Integral', 1, 1, 'Amplio apartamento con vista a la ciudad', '2025-09-02 16:18:25', '2025-10-03 19:13:09'),
 (6, 'Apartamento', 'Si', 2, 0, 3, 0, '1', '120', 2, 0, 0, 0, 'Si', 0, 0, 'Distribución moderna', '2025-10-01 13:18:01', '2025-10-01 13:18:01'),
-(7, '1', '1', 1, 1, 1, 1, '1', '120', 1, 1, 1, 1, '1', 1, 1, 'asd', '2025-10-01 18:37:17', '2025-10-01 18:37:17'),
+(7, '1', '1', 1, 1, 1, 1, '1', '120', 1, 1, 1, 1, '1', 1, 1, 'asd', '2025-10-01 18:37:17', '2025-10-03 12:46:17'),
 (8, '1', '1', 1, 1, 1, 1, '1', '121', 1, 1, 1, 1, '1', 1, 1, '123', '2025-10-01 19:52:57', '2025-10-01 19:52:57'),
 (9, '9999', '1', 1, 1, 1, 1, '1', '999', 1, 1, 1, 1, '1', 1, 1, '9999', '2025-10-02 20:06:20', '2025-10-02 20:06:20'),
 (10, '888', '1', 1, 1, 1, 1, '1', '888', 1, 1, 1, 1, '1', 1, 1, 'asasfasfdf', '2025-10-02 20:42:59', '2025-10-02 20:42:59');
@@ -487,8 +456,6 @@ INSERT INTO `division` (`Division_id`, `Division`, `Balcon`, `Baños`, `Terraza`
 
 --
 -- Estructura de tabla para la tabla `estado_pago`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `estado_pago`;
@@ -510,8 +477,6 @@ TRUNCATE TABLE `estado_pago`;
 
 --
 -- Estructura de tabla para la tabla `factura`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `factura`;
@@ -542,9 +507,6 @@ TRUNCATE TABLE `factura`;
 
 --
 -- Estructura de tabla para la tabla `imagenes_inmueble`
---
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
 --
 
 DROP TABLE IF EXISTS `imagenes_inmueble`;
@@ -589,8 +551,6 @@ INSERT INTO `imagenes_inmueble` (`Imagenes_inmueble_id`, `Imagenes`, `Nombre`, `
 --
 -- Estructura de tabla para la tabla `impuesto`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `impuesto`;
 CREATE TABLE `impuesto` (
@@ -614,8 +574,6 @@ TRUNCATE TABLE `impuesto`;
 
 --
 -- Estructura de tabla para la tabla `impuesto_valor`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `impuesto_valor`;
@@ -646,9 +604,6 @@ TRUNCATE TABLE `impuesto_valor`;
 --
 -- Estructura de tabla para la tabla `inmueble`
 --
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
---
 
 DROP TABLE IF EXISTS `inmueble`;
 CREATE TABLE `inmueble` (
@@ -671,7 +626,8 @@ CREATE TABLE `inmueble` (
   `Visitas` int(11) DEFAULT 0,
   `Observaciones` varchar(255) DEFAULT NULL,
   `Platform_user_FK` int(11) NOT NULL,
-  `Direccion_FK` int(11) DEFAULT NULL
+  `Direccion_FK` int(11) DEFAULT NULL,
+  `favorito` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -701,21 +657,18 @@ TRUNCATE TABLE `inmueble`;
 -- Volcado de datos para la tabla `inmueble`
 --
 
-INSERT INTO `inmueble` (`Inmueble_id`, `Valor`, `Area`, `Descripcion_General`, `Antiguedad`, `Motivo_VoA`, `Situacion_inmueble`, `Tipo_edificacion_FK`, `Otras_caracteristicas_FK`, `Acerca_edificacion_FK`, `Division_FK`, `Imagenes_inmueble_FK`, `Codigo_interno`, `Estado`, `Fecha_publicacion`, `Fecha_actualizacion`, `Visitas`, `Observaciones`, `Platform_user_FK`, `Direccion_FK`) VALUES
-(1, 25000000, 120, 'Apartamento moderno en el centro', 5, 'Venta', 'Disponible', 1, 1, 1, 1, 1, 'APT-101', 'disponible', '2025-09-02 16:18:25', '2025-09-02 16:18:25', 0, 'Sin observaciones', 2, 1),
-(4, 250000000, 120, 'Apartamento de prueba', 5, 'Venta', 'Disponible', 5, 7, 5, 6, 6, 'TEST001', 'disponible', '2025-10-01 13:18:02', '2025-10-01 08:33:20', 0, NULL, 2, 9),
-(5, 890, 890, '890', 890, '890', '890', 6, 8, 6, 7, 10, '890', 'disponible', '2025-10-01 18:37:18', '2025-10-01 18:37:18', 0, '890', 8, 12),
-(6, 852, 852, '852', 851, '852', '852', 7, 9, 7, 8, 11, '852', 'disponible', '2025-10-01 19:52:57', '2025-10-01 19:52:57', 0, '852', 8, 13),
-(7, 99999, 99999, '99999', 99, '99999', '99999', 8, 10, 8, 9, 15, '99999', 'disponible', '2025-10-02 20:06:21', '2025-10-02 20:06:21', 0, '9999', 2, 14),
-(8, 888, 888, '888', 888, '888', '888', 9, 11, 9, 10, 17, '888', 'disponible', '2025-10-02 20:43:00', '2025-10-02 20:43:00', 0, '888', 2, 15);
+INSERT INTO `inmueble` (`Inmueble_id`, `Valor`, `Area`, `Descripcion_General`, `Antiguedad`, `Motivo_VoA`, `Situacion_inmueble`, `Tipo_edificacion_FK`, `Otras_caracteristicas_FK`, `Acerca_edificacion_FK`, `Division_FK`, `Imagenes_inmueble_FK`, `Codigo_interno`, `Estado`, `Fecha_publicacion`, `Fecha_actualizacion`, `Visitas`, `Observaciones`, `Platform_user_FK`, `Direccion_FK`, `favorito`) VALUES
+(1, 25000000, 120, 'Apartamento moderno en el centro', 5, 'Venta', 'Disponible', 1, 1, 1, 1, 1, 'APT-101', 'disponible', '2025-09-02 16:18:25', '2025-10-03 19:13:08', 0, 'Sin observaciones', 2, 1, NULL),
+(4, 250000000, 120, 'Apartamento de prueba', 5, 'Venta', 'Disponible', 5, 7, 5, 6, 6, 'TEST001', 'disponible', '2025-10-01 13:18:02', '2025-10-01 08:33:20', 0, NULL, 2, 9, NULL),
+(5, 890, 890, '890', 890, '890', '890', 6, 8, 6, 7, 10, '890', 'ss', '2025-10-01 18:37:18', '2025-10-03 12:46:17', 0, '890', 8, 12, NULL),
+(6, 852, 852, '852', 851, '852', '852', 7, 9, 7, 8, 11, '852', 'disponible', '2025-10-01 19:52:57', '2025-10-01 19:52:57', 0, '852', 8, 13, NULL),
+(7, 99999, 99999, '99999', 99, '99999', '99999', 8, 10, 8, 9, 15, '99999', 'disponible', '2025-10-02 20:06:21', '2025-10-02 20:06:21', 0, '9999', 2, 14, NULL),
+(8, 888, 888, '888', 888, '888', '888', 9, 11, 9, 10, 17, '888', 'disponible', '2025-10-02 20:43:00', '2025-10-02 20:43:00', 0, '888', 2, 15, NULL);
 
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `localizacion`
---
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
 --
 
 DROP TABLE IF EXISTS `localizacion`;
@@ -757,8 +710,6 @@ INSERT INTO `localizacion` (`Localizacion_id`, `Localizacion_descripcion`, `Lati
 --
 -- Estructura de tabla para la tabla `module`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `module`;
 CREATE TABLE `module` (
@@ -784,8 +735,6 @@ TRUNCATE TABLE `module`;
 
 --
 -- Estructura de tabla para la tabla `module_role`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `module_role`;
@@ -815,9 +764,6 @@ TRUNCATE TABLE `module_role`;
 
 --
 -- Estructura de tabla para la tabla `municipio`
---
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
 --
 
 DROP TABLE IF EXISTS `municipio`;
@@ -855,9 +801,6 @@ INSERT INTO `municipio` (`Municipio_id`, `Ndap_FK`, `Municipio_nombre`, `Municip
 --
 -- Estructura de tabla para la tabla `ndap`
 --
--- Creación: 01-10-2025 a las 18:19:07
--- Última actualización: 02-10-2025 a las 20:43:00
---
 
 DROP TABLE IF EXISTS `ndap`;
 CREATE TABLE `ndap` (
@@ -894,9 +837,6 @@ INSERT INTO `ndap` (`Ndap_id`, `Ndap_descripcion`, `Activo`, `Created_at`, `Upda
 --
 -- Estructura de tabla para la tabla `organizacion_parqueadero`
 --
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
---
 
 DROP TABLE IF EXISTS `organizacion_parqueadero`;
 CREATE TABLE `organizacion_parqueadero` (
@@ -932,9 +872,6 @@ INSERT INTO `organizacion_parqueadero` (`Organizacion_parqueadero_id`, `Tipo_par
 --
 -- Estructura de tabla para la tabla `otras_caracteristicas`
 --
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
---
 
 DROP TABLE IF EXISTS `otras_caracteristicas`;
 CREATE TABLE `otras_caracteristicas` (
@@ -969,9 +906,9 @@ TRUNCATE TABLE `otras_caracteristicas`;
 --
 
 INSERT INTO `otras_caracteristicas` (`Otras_caracteristicas_id`, `Caracteristicas_descripcion`, `Deposito`, `Lavanderia`, `Gas`, `Piso`, `Mascotas_permitidas`, `Tipo_inmueble`, `Amoblado`, `Descripcion_adicional`, `Created_at`, `Updated_at`, `Asignacion_FK`) VALUES
-(1, 'Apartamento con excelentes aca', 1, 1, 1, 5, 1, 'Apartamento', 1, 'Balcón amplio con vista a la ciudad.', '2025-09-02 16:18:25', '2025-09-02 16:18:25', 1),
+(1, 'Apartamento con excelentes aca', 1, 1, 1, 5, 1, 'Apartamento', 1, 'Balcón amplio con vista a la ciudad.', '2025-09-02 16:18:25', '2025-10-03 19:13:09', 1),
 (7, 'Apartamento básico', 0, 0, 0, 0, 0, 'Apartamento', 0, 'Sin muebles', '2025-10-01 13:18:01', '2025-10-01 13:18:01', 7),
-(8, 'adadada', 1, 1, 1, 5, 1, 'Apartamento', 1, 'apto102', '2025-10-01 18:37:18', '2025-10-01 18:37:18', 8),
+(8, 'adadada', 1, 1, 1, 5, 1, 'Apartamento', 1, 'apto102', '2025-10-01 18:37:18', '2025-10-03 12:46:17', 8),
 (9, '8552', 1, 1, 1, 1, 1, 'Apartamento', 1, 'asd', '2025-10-01 19:52:57', '2025-10-01 19:52:57', 9),
 (10, '999', 1, 1, 1, 1, 1, 'Apartamento', 1, '999', '2025-10-02 20:06:20', '2025-10-02 20:06:20', 10),
 (11, '888', 1, 1, 1, 1, 1, '1', 1, 'Sin características adicionales', '2025-10-02 20:43:00', '2025-10-02 20:43:00', 11);
@@ -980,8 +917,6 @@ INSERT INTO `otras_caracteristicas` (`Otras_caracteristicas_id`, `Caracteristica
 
 --
 -- Estructura de tabla para la tabla `pago`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `pago`;
@@ -1014,8 +949,6 @@ TRUNCATE TABLE `pago`;
 --
 -- Estructura de tabla para la tabla `permitions`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `permitions`;
 CREATE TABLE `permitions` (
@@ -1040,8 +973,6 @@ TRUNCATE TABLE `permitions`;
 
 --
 -- Estructura de tabla para la tabla `permitions_module_role`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `permitions_module_role`;
@@ -1071,8 +1002,6 @@ TRUNCATE TABLE `permitions_module_role`;
 
 --
 -- Estructura de tabla para la tabla `platform_identity_document`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `platform_identity_document`;
@@ -1104,8 +1033,6 @@ TRUNCATE TABLE `platform_identity_document`;
 --
 -- Estructura de tabla para la tabla `platform_module`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `platform_module`;
 CREATE TABLE `platform_module` (
@@ -1133,8 +1060,6 @@ TRUNCATE TABLE `platform_module`;
 
 --
 -- Estructura de tabla para la tabla `platform_module_role`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `platform_module_role`;
@@ -1165,8 +1090,6 @@ TRUNCATE TABLE `platform_module_role`;
 --
 -- Estructura de tabla para la tabla `platform_permitions`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `platform_permitions`;
 CREATE TABLE `platform_permitions` (
@@ -1191,8 +1114,6 @@ TRUNCATE TABLE `platform_permitions`;
 
 --
 -- Estructura de tabla para la tabla `platform_permitions_module_role`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `platform_permitions_module_role`;
@@ -1222,8 +1143,6 @@ TRUNCATE TABLE `platform_permitions_module_role`;
 
 --
 -- Estructura de tabla para la tabla `platform_profile`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `platform_profile`;
@@ -1262,7 +1181,7 @@ TRUNCATE TABLE `platform_profile`;
 --
 
 INSERT INTO `platform_profile` (`Profile_id`, `Profile_name`, `Profile_lastname`, `Profile_phone`, `Profile_addres`, `Profile_email`, `Profile_photo`, `Profile_birthdate`, `Profile_gender`, `Profile_national_id`, `Profile_bio`, `Profile_website`, `Profile_social`, `Platform_user_FK`, `createdAt`, `updatedAt`) VALUES
-(1, 'jonathan ivan', 'rendon bermeo', '3216417337', 'acascac', 'jonathan_bermeo014@hotmail.com', 'https://storage.googleapis.com/inmotechalmacenamiento/1758906948844_wallpaperbetter.com_1920x1080.jpg', '1999-05-21', 'Masculino', 'Colombiano', 'sdadadadasdasd', 'https://storage.googleapis.com/inmotechalmacenamiento/1758871453008_caballo.jpg', 'https://storage.googleapis.com/inmotechalmacenamiento/1758871453008_caballo.jpg', 2, '2025-09-24 05:31:05', '2025-09-26 17:15:52'),
+(1, 'jonathan ivan', 'rendon bermeo', '3216417337', 'acascac', 'jonathan_bermeo014@hotmail.com', 'https://storage.googleapis.com/inmotechalmacenamiento/1758906948844_wallpaperbetter.com_1920x1080.jpg', '1999-05-21', 'Masculino', 'Colombiano', 'sdadadadasdasd', 'https://storage.googleapis.com/inmotechalmacenamiento/1758871453008_caballo.jpg', 'https://storage.googleapis.com/inmotechalmacenamiento/1758871453008_caballo.jpg', 2, '2025-09-24 05:31:05', '2025-10-04 06:41:18'),
 (2, 'asdf', 'asdasdas', '12321312', 'sadasdasd', 'asdasda@hotmail.com', 'asdsadas', '2025-09-16', 'asdsad', 'colombianos', 'asdasda', 'dsada', 'sdasdas', 3, '2025-09-24 16:11:29', '2025-09-24 16:11:36'),
 (3, 'asdas', 'adasd', '234243', 'asdasd', 'asdasda@hotmail.com', 'https://storage.googleapis.com/inmotechalmacenamiento/1758901126473_pxfuel (3).jpg', '2025-09-26', 'masculino', 'colombiano', 'asdadasd', 'asdad', 'instagramer', 6, '2025-09-25 21:23:54', '2025-09-26 15:38:48');
 
@@ -1270,8 +1189,6 @@ INSERT INTO `platform_profile` (`Profile_id`, `Profile_name`, `Profile_lastname`
 
 --
 -- Estructura de tabla para la tabla `platform_role`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `platform_role`;
@@ -1306,8 +1223,6 @@ INSERT INTO `platform_role` (`Platform_role_id`, `Role_name`, `Role_description`
 
 --
 -- Estructura de tabla para la tabla `platform_user`
---
--- Creación: 22-09-2025 a las 21:25:25
 --
 
 DROP TABLE IF EXISTS `platform_user`;
@@ -1352,8 +1267,6 @@ INSERT INTO `platform_user` (`Platform_user_id`, `Username`, `email`, `Password`
 --
 -- Estructura de tabla para la tabla `platform_user_status`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `platform_user_status`;
 CREATE TABLE `platform_user_status` (
@@ -1384,8 +1297,6 @@ INSERT INTO `platform_user_status` (`Platform_user_status_id`, `User_status_name
 
 --
 -- Estructura de tabla para la tabla `politica_de_privacidad`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `politica_de_privacidad`;
@@ -1420,8 +1331,6 @@ INSERT INTO `politica_de_privacidad` (`id`, `titulo`, `descripcion`, `version`, 
 --
 -- Estructura de tabla para la tabla `porque_elegirnos`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `porque_elegirnos`;
 CREATE TABLE `porque_elegirnos` (
@@ -1449,18 +1358,19 @@ TRUNCATE TABLE `porque_elegirnos`;
 --
 
 INSERT INTO `porque_elegirnos` (`id`, `titulo`, `descripcion`, `icono`, `orden`, `activo`, `fecha_creacion`, `fecha_actualizacion`) VALUES
-(1, 'elegirnos pq si', 'si esa es la descripcion', 'FaFacebookF', 1, 1, '2025-09-21 13:00:31', '2025-09-21 13:00:31'),
-(2, '¿Qué es Lorem Ipsum? Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la impren', '¿Qué es Lorem Ipsum?\nLorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.\n\n¿Por qué lo usamos?\nEs un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo \"Contenido aquí, contenido aquí\". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de \"Lorem Ipsum\" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).\n\n\n¿De dónde viene?\nAl contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, \"consecteur\", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de \"de Finnibus Bonorum et Malorum\" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", viene de una linea en la sección 1.10.32\n\nEl trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de \"de Finibus Bonorum et Malorum\" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.\n\n¿Dónde puedo conseguirlo?\nHay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.', 'FaBan', 2, 1, '2025-09-30 13:26:33', '2025-09-30 13:26:33'),
-(3, 'msi', '¿Qué es Lorem Ipsum? Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum. ¿Por qué lo usamos? Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo \"Contenido aquí, contenido aquí\". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de \"Lorem Ipsum\" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo). ¿De dónde viene? Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, \"consecteur\", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, ', 'FaAmazonPay', 3, 1, '2025-09-30 18:36:36', '2025-09-30 18:36:36'),
-(4, 'wqerrt', '¿Qué es Lorem Ipsum? Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum. ¿Por qué lo usamos? Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo \"Contenido aquí, contenido aquí\". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de \"Lorem Ipsum\" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo). ¿De dónde viene? Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, \"consecteur\", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, ', 'FaBehanceSquare', 4, 1, '2025-09-30 18:36:54', '2025-09-30 18:36:54'),
-(5, 'cvbnm', '¿Qué es Lorem Ipsum? Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum. ¿Por qué lo usamos? Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo \"Contenido aquí, contenido aquí\". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de \"Lorem Ipsum\" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo). ¿De dónde viene? Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, \"consecteur\", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, ', 'FaRegFileWord', 5, 1, '2025-09-30 18:37:26', '2025-09-30 18:37:26');
+(1, 'Experiencia Comprobada', 'Contamos con más de una década de trayectoria en el sector, lo que nos permite entender profundamente tus necesidades y ofrecer soluciones robustas y eficaces, avaladas por un historial de éxitos.', 'FaFacebookF', 1, 1, '2025-09-21 13:00:31', '2025-10-04 05:35:11'),
+(2, 'Calidad Garantizada', 'Nuestro compromiso con la excelencia se refleja en cada detalle. Utilizamos los mejores materiales y procesos, asegurando que cada producto o servicio cumpla con los más altos estándares de calidad.', 'FaBan', 2, 1, '2025-09-30 13:26:33', '2025-10-04 05:35:57'),
+(3, 'Soporte Personalizado', 'No eres solo un número para nosotros. Ofrecemos atención al cliente dedicada y personalizada, con un equipo listo para responder tus preguntas y resolver cualquier incidencia de forma rápida y eficiente.', 'FaAmazonPay', 3, 1, '2025-09-30 18:36:36', '2025-10-04 05:36:19'),
+(4, 'Innovación Constante', 'Nos mantenemos a la vanguardia de las últimas tendencias y tecnologías. Invertimos continuamente en investigación y desarrollo para ofrecerte soluciones innovadoras que te mantengan un paso adelante.', 'FaBehanceSquare', 4, 1, '2025-09-30 18:36:54', '2025-10-04 05:36:42'),
+(5, 'Precios Competitivos', 'Creemos que la calidad no tiene por qué ser inaccesible. Ofrecemos una excelente relación calidad-precio, asegurando que obtengas el mayor valor por tu inversión.', 'FaRegFileWord', 5, 1, '2025-09-30 18:37:26', '2025-10-04 05:38:00'),
+(6, 'Equipo de Expertos', 'Nuestro equipo está compuesto por profesionales altamente cualificados y apasionados, cada uno con una especialización que contribuye a un enfoque integral y experto en cada proyecto.', 'FaBoxes', 6, 1, '2025-10-04 05:38:27', '2025-10-04 05:38:27'),
+(7, 'Flexibilidad y Adaptabilidad', 'Entendemos que cada cliente es único. Nos adaptamos a tus requisitos específicos y ofrecemos soluciones flexibles y a medida para garantizar que se ajusten perfectamente a tus expectativas y necesidades.', 'FaBalanceScaleRight', 7, 1, '2025-10-04 05:39:00', '2025-10-04 05:39:00'),
+(8, 'Compromiso Sostenible', 'Estamos dedicados a prácticas responsables y sostenibles. Nos esforzamos por minimizar nuestro impacto ambiental y contribuir positivamente a la comunidad en la que operamos.', 'FaLaravel', 8, 1, '2025-10-04 05:39:38', '2025-10-04 05:39:38');
 
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `preguntas_frecuentes`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `preguntas_frecuentes`;
@@ -1496,8 +1406,6 @@ INSERT INTO `preguntas_frecuentes` (`id`, `pregunta`, `respuesta`, `categoria`, 
 --
 -- Estructura de tabla para la tabla `resolucion_factura`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `resolucion_factura`;
 CREATE TABLE `resolucion_factura` (
@@ -1520,8 +1428,6 @@ TRUNCATE TABLE `resolucion_factura`;
 
 --
 -- Estructura de tabla para la tabla `retenedor_iva`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `retenedor_iva`;
@@ -1546,8 +1452,6 @@ TRUNCATE TABLE `retenedor_iva`;
 
 --
 -- Estructura de tabla para la tabla `role`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `role`;
@@ -1575,8 +1479,6 @@ TRUNCATE TABLE `role`;
 --
 -- Estructura de tabla para la tabla `sobre_nosotros`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `sobre_nosotros`;
 CREATE TABLE `sobre_nosotros` (
@@ -1603,15 +1505,17 @@ TRUNCATE TABLE `sobre_nosotros`;
 --
 
 INSERT INTO `sobre_nosotros` (`id`, `titulo`, `descripcion`, `imagen_url`, `fecha_creacion`, `fecha_actualizacion`, `activo`) VALUES
-(1, 'hola', 'esto es un saludo', '/assets/images/sobrenosotros/1758403072120-301510981.jpg', '2025-09-20 21:17:52', '2025-09-20 21:17:52', 1),
-(2, 'adsfsaddsafasdfdasfdasfdsfsdafdsafsafsdfdsfdsfsdfsdfdsafsdafasdfsadsafsd', '¿Qué es Lorem Ipsum?\nLorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas \"Letraset\", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.\n\n¿Por qué lo usamos?\nEs un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo \"Contenido aquí, contenido aquí\". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de \"Lorem Ipsum\" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).\n\n\n¿De dónde viene?\nAl contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, \"consecteur\", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de \"de Finnibus Bonorum et Malorum\" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", viene de una linea en la sección 1.10.32\n\nEl trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de \"de Finibus Bonorum et Malorum\" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.\n\n¿Dónde puedo conseguirlo?\nHay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. Todos los generadores de Lorem Ipsum que se encuentran en Internet tienden a repetir trozos predefinidos cuando sea necesario, haciendo a este el único generador verdadero (válido) en la Internet. Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de Lorem Ipsum que parezca razonable. Este Lorem Ipsum generado siempre estará libre de repeticiones, humor agregado o palabras no características del lenguaje, etc.', '/assets/images/sobrenosotros/1759238706570-229568276.jpg', '2025-09-30 13:25:07', '2025-09-30 13:25:07', 1);
+(1, 'El Nacimiento de Inmotech: Una Solución al Desorden Inmobiliario', 'En 2018, Laura Vélez, una desarrolladora de software frustrada por la dificultad de encontrar un comprador genuino para el apartamento de su abuela, tuvo una idea. Se dio cuenta de que los grandes portales inmobiliarios estaban llenos de anuncios duplicados, propiedades que ya se habían vendido y precios desactualizados. La información era un caos, y los vendedores se sentían estafados pagando altas comisiones o suscripciones por servicios que no garantizaban una venta rápida.\n\nSu visión era simple: crear una plataforma que fuera la fuente de información inmobiliaria más limpia y actualizada del mercado. Así nació Inmotech.', '/assets/images/sobrenosotros/1758403072120-301510981.jpg', '2025-09-20 21:17:52', '2025-10-04 05:16:11', 1),
+(2, 'El Modelo de Negocio Disruptivo', 'Inmotech se lanzó con un modelo de negocio audazmente sencillo, diseñado para incentivar la precisión:\n\n1. Pago por Publicación: El propietario o agente paga una tarifa plana única y muy competitiva (por ejemplo, $50 USD) para publicar su inmueble durante un período determinado (90 días o hasta que se venda).\n\n2. La Promesa de la Limpieza: El corazón del modelo era la eliminación inmediata. Cuando el inmueble se vende (o se arrienda, si eligen esa opción), el vendedor está obligado a marcar el anuncio como vendido. Si no lo hace, y Inmotech detecta que la propiedad ya no está disponible, el vendedor pierde la posibilidad de publicar otro anuncio en la plataforma. La publicación se borra de inmediato para mantener el catálogo \"fresco\".\n\nEste sistema creó un ecosistema de confianza y veracidad. Los compradores sabían que si veían un anuncio en Inmotech, era una propiedad genuinamente disponible, algo que no sucedía en la competencia.', '/assets/images/sobrenosotros/1759238706570-229568276.jpg', '2025-09-30 13:25:07', '2025-10-04 05:22:03', 1),
+(3, 'Crecimiento y Desafíos', 'Los primeros años fueron difíciles. Los agentes inmobiliarios tradicionales se resistían al modelo de tarifa plana y preferían sus acuerdos de comisión. Sin embargo, los vendedores particulares y las pequeñas constructoras independientes adoptaron Inmotech rápidamente. Apreciaban el control total sobre su anuncio y el bajo costo frente a las comisiones de miles de dólares.\n\nEn 2020, la pandemia de COVID-19 resultó ser un catalizador inesperado. Con los recorridos físicos limitados, la gente se volcó a la búsqueda en línea. Laura y su equipo lanzaron una herramienta de \"Tour Virtual 3D\" integrada en la tarifa de publicación, posicionando a Inmotech como la plataforma más avanzada tecnológicamente para mostrar propiedades.\n\nEl Desafío de la Verificación\nEl mayor desafío fue asegurar que los vendedores cumplieran con la promesa de la eliminación. La solución de Inmotech fue un algoritmo llamado \"El Barredor\". Este sistema, asistido por IA, cruzaba datos de registros públicos, publicaciones en redes sociales y la actividad del propio usuario en la plataforma. Si un anuncio no recibía visitas o consultas en mucho tiempo, o si se detectaba una baja en la actividad de un vendedor después de una venta reportada, el sistema lo marcaba y un pequeño equipo humano contactaba al vendedor. Si se confirmaba la venta, el anuncio se eliminaba y el vendedor mantenía su buen score de veracidad. Si mentía, se enfrentaba a una suspensión.', '/assets/images/sobrenosotros/1759555533695-601608448.png', '2025-10-04 05:24:55', '2025-10-04 05:26:32', 1),
+(4, 'Inmotech Hoy: Liderazgo en la Eficiencia', 'Hoy, Inmotech es el líder en varios mercados de América Latina, conocido por su eficiencia y su catálogo sin igual de \"inmuebles vendibles\".\n\nImpacto en el Mercado: Ha forzado a la competencia a limpiar sus propios catálogos.\n\nInnovación: Lanzaron InmoData, una herramienta que analiza los datos de los inmuebles vendidos (ya eliminados de la plataforma) para generar informes de valoración hiperprecisos para sus usuarios, cerrando el círculo de valor.\n\nLa Cultura de la Venta: Su lema es simple: \"Publica para vender, no para esperar.\"\n\nEl éxito de Inmotech no es solo tecnológico, sino un triunfo de la honestidad y la claridad en un sector a menudo opaco. Demostró que un modelo que beneficia directamente al consumidor (el comprador, al ver solo propiedades disponibles) puede ser el más rentable.\n\nLaura Vélez, aún al frente, lo resume así: \"No vendemos anuncios. Vendemos visibilidad de propiedades reales a compradores reales. Y cuando el trato se cierra, celebramos con la tecla \'Eliminar\'.\"', '/assets/images/sobrenosotros/1759555659075-522248665.png', '2025-10-04 05:27:40', '2025-10-04 05:27:40', 1),
+(5, 'El Equipo y la Cultura de Inmotech', 'En Inmotech, creemos que la tecnología solo es tan buena como las personas que la crean y la mantienen. Somos un equipo apasionado por la transparencia y comprometido con hacer que encontrar (y vender) un hogar sea un proceso honesto y eficiente.\n\nLa Cultura: Más Allá del Código y los Ladrillos\nEn Inmotech, no solo construimos una plataforma; construimos una forma mejor de trabajar. Nuestra cultura se cimienta en tres pilares:\n\n1. Obsesión por la Verdad (El \"Modo Barredor\")\nLa transparencia no es solo nuestro modelo de negocio, es nuestra cultura interna. Fomentamos una comunicación abierta y la retroalimentación directa (el famoso feedback sin rodeos). Si algo no funciona o no está actualizado, lo decimos y lo arreglamos de inmediato. Esta honestidad se refleja en la limpieza de nuestro catálogo y nos obliga a mantenernos críticos y ágiles.\n\n2. Crecimiento por Proyectos, No por Horarios\nSomos una empresa orientada a resultados. Ofrecemos flexibilidad total en horarios y ubicación, confiando en que cada miembro del equipo cumplirá sus objetivos. Esto se traduce en un alto nivel de autonomía y responsabilidad, permitiendo que la gente trabaje cuando y donde sea más productiva. Promovemos el aprendizaje continuo a través de \"InmoTalks\", sesiones internas para compartir conocimientos de software, mercado o diseño.\n\n3. El Compromiso con el Primer Hogar\nExiste un profundo respeto por la misión en Inmotech: facilitar la compra de un hogar. Patrocinamos programas de educación financiera para millennials que compran su primera propiedad y dedicamos un día al mes a actividades de voluntariado centradas en el desarrollo de vivienda asequible. Nuestro objetivo no es solo eliminar anuncios; es facilitar sueños y recordamos a menudo el impacto social de nuestro trabajo.', '/assets/images/sobrenosotros/1759555858651-414099987.png', '2025-10-04 05:31:00', '2025-10-04 05:31:00', 1),
+(6, 'El Diferenciador y la Confianza', 'Nuestra Propuesta de Valor Única (PVU): La Limpieza de Datos\nLo que realmente hace que Inmotech sea diferente es la Obsesión por la Verdad. Mientras otros portales ganan dinero por la cantidad de anuncios, nosotros ganamos confianza por la calidad y la precisión de la información.\n\nEl Vendedor nos elige porque:\n\nCosto-Efectividad: Pagan una tarifa plana y única muy baja, garantizando que su dinero se invierte en una audiencia de compradores serios que no están cansados de ver anuncios falsos o caducados.\n\nVisibilidad Genuina: Los compradores no tienen que \"filtrar\" la basura. Esto significa que los listados en Inmotech reciben una mayor atención de compradores con intención real de compra, acelerando la venta.\n\nEl Comprador nos elige porque:\n\nGarantía de Disponibilidad: Nuestro modelo de eliminación forzada por venta asegura que, si lo ves en Inmotech, está disponible. Esto elimina la frustración de contactar a un agente solo para descubrir que la propiedad se vendió hace seis meses.\n\nDatos de Precios Reales: Al obligar a la eliminación, nuestro sistema puede generar un índice de precios basado en las propiedades realmente vendidas (y no solo publicadas), ofreciendo a los compradores y vendedores los datos de valoración más precisos del mercado.\n\nSomos el único portal que premia a los vendedores por eliminar su anuncio rápidamente.', '/assets/images/sobrenosotros/1759555980156-21565666.jpg', '2025-10-04 05:33:02', '2025-10-04 05:33:02', 1);
 
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `suscripcion`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `suscripcion`;
@@ -1643,8 +1547,6 @@ TRUNCATE TABLE `suscripcion`;
 --
 -- Estructura de tabla para la tabla `terminos_y_condiciones`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `terminos_y_condiciones`;
 CREATE TABLE `terminos_y_condiciones` (
@@ -1675,9 +1577,6 @@ INSERT INTO `terminos_y_condiciones` (`Terminos_id`, `Titulo`, `Descripcion`, `F
 --
 -- Estructura de tabla para la tabla `tipo_edificacion`
 --
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
---
 
 DROP TABLE IF EXISTS `tipo_edificacion`;
 CREATE TABLE `tipo_edificacion` (
@@ -1704,9 +1603,9 @@ TRUNCATE TABLE `tipo_edificacion`;
 --
 
 INSERT INTO `tipo_edificacion` (`Tipo_edificacion_id`, `Tipo_edificacion_categoria`, `Tipo_edificacion_descripcion`, `Tipo_edificacion_niveles`, `Tipo_edificacion_activo`, `Created_at`, `Updated_at`) VALUES
-(1, 'Residencial', 'Apartamento en edificio de propiedad horizontal', 15, 1, '2025-09-02 16:18:25', '2025-09-02 16:18:25'),
+(1, 'Residencial', 'Apartamento en edificio de propiedad horizontal', 15, 1, '2025-09-02 16:18:25', '2025-10-03 19:13:09'),
 (5, 'Residencial', 'Apartamento', NULL, 1, '2025-10-01 13:18:02', '2025-10-01 13:18:02'),
-(6, 'Residencial', 'Apartamento', 5, 1, '2025-10-01 18:37:17', '2025-10-01 18:37:17'),
+(6, 'Residencial', 'Apartamento', 5, 1, '2025-10-01 18:37:17', '2025-10-03 12:46:17'),
 (7, '1', 'Apartamento en edificio de propiedad horizontal', 8, 1, '2025-10-01 19:52:57', '2025-10-01 19:52:57'),
 (8, '9', '9', 9, 1, '2025-10-02 20:06:20', '2025-10-02 20:06:20'),
 (9, '888', '888', 8, 1, '2025-10-02 20:42:59', '2025-10-02 20:42:59');
@@ -1715,8 +1614,6 @@ INSERT INTO `tipo_edificacion` (`Tipo_edificacion_id`, `Tipo_edificacion_categor
 
 --
 -- Estructura de tabla para la tabla `users`
---
--- Creación: 08-08-2025 a las 18:09:17
 --
 
 DROP TABLE IF EXISTS `users`;
@@ -1746,9 +1643,45 @@ TRUNCATE TABLE `users`;
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `user_status`
+-- Estructura de tabla para la tabla `user_favoritos`
 --
--- Creación: 08-08-2025 a las 18:09:17
+
+DROP TABLE IF EXISTS `user_favoritos`;
+CREATE TABLE `user_favoritos` (
+  `User_favorito_id` int(11) NOT NULL,
+  `Platform_user_FK` int(11) NOT NULL,
+  `Inmueble_FK` int(11) NOT NULL,
+  `Fecha_agregado` datetime DEFAULT current_timestamp(),
+  `Activo` tinyint(1) DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- RELACIONES PARA LA TABLA `user_favoritos`:
+--   `Platform_user_FK`
+--       `platform_user` -> `Platform_user_id`
+--   `Inmueble_FK`
+--       `inmueble` -> `Inmueble_id`
+--
+
+--
+-- Truncar tablas antes de insertar `user_favoritos`
+--
+
+TRUNCATE TABLE `user_favoritos`;
+--
+-- Volcado de datos para la tabla `user_favoritos`
+--
+
+INSERT INTO `user_favoritos` (`User_favorito_id`, `Platform_user_FK`, `Inmueble_FK`, `Fecha_agregado`, `Activo`) VALUES
+(1, 8, 8, '2025-10-03 18:47:24', 1),
+(2, 8, 7, '2025-10-03 18:54:12', 1),
+(3, 2, 4, '2025-10-03 20:28:57', 0),
+(4, 2, 6, '2025-10-03 19:48:37', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `user_status`
 --
 
 DROP TABLE IF EXISTS `user_status`;
@@ -1774,8 +1707,6 @@ TRUNCATE TABLE `user_status`;
 --
 -- Estructura de tabla para la tabla `valor`
 --
--- Creación: 08-08-2025 a las 18:09:17
---
 
 DROP TABLE IF EXISTS `valor`;
 CREATE TABLE `valor` (
@@ -1798,9 +1729,6 @@ TRUNCATE TABLE `valor`;
 
 --
 -- Estructura de tabla para la tabla `vereda`
---
--- Creación: 08-08-2025 a las 18:09:17
--- Última actualización: 02-10-2025 a las 20:43:00
 --
 
 DROP TABLE IF EXISTS `vereda`;
@@ -2163,6 +2091,14 @@ ALTER TABLE `users`
   ADD KEY `users_role_fk` (`Role_FK`);
 
 --
+-- Indices de la tabla `user_favoritos`
+--
+ALTER TABLE `user_favoritos`
+  ADD PRIMARY KEY (`User_favorito_id`),
+  ADD UNIQUE KEY `unique_user_inmueble` (`Platform_user_FK`,`Inmueble_FK`),
+  ADD KEY `Inmueble_FK` (`Inmueble_FK`);
+
+--
 -- Indices de la tabla `user_status`
 --
 ALTER TABLE `user_status`
@@ -2189,25 +2125,25 @@ ALTER TABLE `vereda`
 -- AUTO_INCREMENT de la tabla `acerca_edificacion`
 --
 ALTER TABLE `acerca_edificacion`
-  MODIFY `Acerca_edificacion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `Acerca_edificacion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `asignacion`
 --
 ALTER TABLE `asignacion`
-  MODIFY `Asignacion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `Asignacion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `barrio`
 --
 ALTER TABLE `barrio`
-  MODIFY `Barrio_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `Barrio_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `barrio_ciudad_corregimiento_vereda`
 --
 ALTER TABLE `barrio_ciudad_corregimiento_vereda`
-  MODIFY `Barrio_ciudad_corregimiento_vereda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Barrio_ciudad_corregimiento_vereda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `carrusel`
@@ -2219,7 +2155,7 @@ ALTER TABLE `carrusel`
 -- AUTO_INCREMENT de la tabla `ciudad`
 --
 ALTER TABLE `ciudad`
-  MODIFY `Ciudad_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `Ciudad_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `contacto`
@@ -2231,43 +2167,43 @@ ALTER TABLE `contacto`
 -- AUTO_INCREMENT de la tabla `corregimiento`
 --
 ALTER TABLE `corregimiento`
-  MODIFY `Corregimiento_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Corregimiento_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `designador_cardinal`
 --
 ALTER TABLE `designador_cardinal`
-  MODIFY `Designador_cardinal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Designador_cardinal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `direccion`
 --
 ALTER TABLE `direccion`
-  MODIFY `Direccion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `Direccion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de la tabla `division`
 --
 ALTER TABLE `division`
-  MODIFY `Division_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `Division_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `imagenes_inmueble`
 --
 ALTER TABLE `imagenes_inmueble`
-  MODIFY `Imagenes_inmueble_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `Imagenes_inmueble_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de la tabla `inmueble`
 --
 ALTER TABLE `inmueble`
-  MODIFY `Inmueble_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `Inmueble_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `localizacion`
 --
 ALTER TABLE `localizacion`
-  MODIFY `Localizacion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `Localizacion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `module`
@@ -2285,25 +2221,25 @@ ALTER TABLE `module_role`
 -- AUTO_INCREMENT de la tabla `municipio`
 --
 ALTER TABLE `municipio`
-  MODIFY `Municipio_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `Municipio_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `ndap`
 --
 ALTER TABLE `ndap`
-  MODIFY `Ndap_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `Ndap_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de la tabla `organizacion_parqueadero`
 --
 ALTER TABLE `organizacion_parqueadero`
-  MODIFY `Organizacion_parqueadero_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `Organizacion_parqueadero_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `otras_caracteristicas`
 --
 ALTER TABLE `otras_caracteristicas`
-  MODIFY `Otras_caracteristicas_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `Otras_caracteristicas_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `permitions`
@@ -2381,7 +2317,7 @@ ALTER TABLE `politica_de_privacidad`
 -- AUTO_INCREMENT de la tabla `porque_elegirnos`
 --
 ALTER TABLE `porque_elegirnos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de la tabla `preguntas_frecuentes`
@@ -2399,7 +2335,7 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT de la tabla `sobre_nosotros`
 --
 ALTER TABLE `sobre_nosotros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `terminos_y_condiciones`
@@ -2411,13 +2347,19 @@ ALTER TABLE `terminos_y_condiciones`
 -- AUTO_INCREMENT de la tabla `tipo_edificacion`
 --
 ALTER TABLE `tipo_edificacion`
-  MODIFY `Tipo_edificacion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `Tipo_edificacion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
   MODIFY `User_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `user_favoritos`
+--
+ALTER TABLE `user_favoritos`
+  MODIFY `User_favorito_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `user_status`
@@ -2429,7 +2371,7 @@ ALTER TABLE `user_status`
 -- AUTO_INCREMENT de la tabla `vereda`
 --
 ALTER TABLE `vereda`
-  MODIFY `Vereda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `Vereda_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas
@@ -2582,6 +2524,13 @@ ALTER TABLE `suscripcion`
 ALTER TABLE `users`
   ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`User_status_FK`) REFERENCES `user_status` (`User_status_id`),
   ADD CONSTRAINT `users_ibfk_2` FOREIGN KEY (`Role_FK`) REFERENCES `role` (`Role_id`);
+
+--
+-- Filtros para la tabla `user_favoritos`
+--
+ALTER TABLE `user_favoritos`
+  ADD CONSTRAINT `user_favoritos_ibfk_1` FOREIGN KEY (`Platform_user_FK`) REFERENCES `platform_user` (`Platform_user_id`) ON DELETE CASCADE,
+  ADD CONSTRAINT `user_favoritos_ibfk_2` FOREIGN KEY (`Inmueble_FK`) REFERENCES `inmueble` (`Inmueble_id`) ON DELETE CASCADE;
 
 --
 -- Filtros para la tabla `vereda`
@@ -3489,6 +3438,25 @@ TRUNCATE TABLE `pma__table_uiprefs`;
 
 TRUNCATE TABLE `pma__tracking`;
 --
+-- Metadatos para la tabla user_favoritos
+--
+
+--
+-- Truncar tablas antes de insertar `pma__column_info`
+--
+
+TRUNCATE TABLE `pma__column_info`;
+--
+-- Truncar tablas antes de insertar `pma__table_uiprefs`
+--
+
+TRUNCATE TABLE `pma__table_uiprefs`;
+--
+-- Truncar tablas antes de insertar `pma__tracking`
+--
+
+TRUNCATE TABLE `pma__tracking`;
+--
 -- Metadatos para la tabla user_status
 --
 
@@ -3629,6 +3597,7 @@ INSERT INTO `pma__table_coords` (`db_name`, `table_name`, `pdf_page_number`, `x`
 ('inmotech_fs_development', 'suscripcion', @LAST_PAGE, 1221, 660),
 ('inmotech_fs_development', 'terminos_y_condiciones', @LAST_PAGE, 462, 2500),
 ('inmotech_fs_development', 'tipo_edificacion', @LAST_PAGE, 796, 1041),
+('inmotech_fs_development', 'user_favoritos', @LAST_PAGE, 108, 1129),
 ('inmotech_fs_development', 'user_status', @LAST_PAGE, 46, 62),
 ('inmotech_fs_development', 'users', @LAST_PAGE, 372, 0),
 ('inmotech_fs_development', 'valor', @LAST_PAGE, 2590, 436),

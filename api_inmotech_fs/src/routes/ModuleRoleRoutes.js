@@ -18,7 +18,7 @@
 // export default router;
 
 const express = require('express');
-const ModuleRoleController = require('../controllers/ModuleRoleController');
+const ModuleRoleController = require('../controllers/moduleRoleController');
 const router = express.Router();
 
 router.get('/', ModuleRoleController.findAll);

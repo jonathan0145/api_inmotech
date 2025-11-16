@@ -18,7 +18,7 @@
 // export default router;
 
 const express = require('express');
-const UserStatusController = require('../controllers/UserStatusController');
+const UserStatusController = require('../controllers/userStatusController');
 const router = express.Router();
 
 router.get('/', UserStatusController.findAll);

@@ -18,7 +18,7 @@
 // export default router;
 
 const express = require('express');
-const ImagenesInmuebleController = require('../controllers/ImagenesInmuebleController');
+const ImagenesInmuebleController = require('../controllers/imagenesInmuebleController');
  const verifyToken = require('../middlewares/verifyToken');
 
 const router = express.Router();

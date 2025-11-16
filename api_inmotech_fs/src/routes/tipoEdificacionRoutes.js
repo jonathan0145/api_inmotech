@@ -20,7 +20,7 @@
 // export default router;
 
 const express = require('express');
-const TipoEdificacionController = require('../controllers/TipoEdificacionController');
+const TipoEdificacionController = require('../controllers/tipoEdificacionController');
  const verifyToken = require('../middlewares/verifyToken');
 
 const router = express.Router();
